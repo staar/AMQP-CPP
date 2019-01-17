@@ -56,6 +56,8 @@ aux_source_directory(src src_MAIN)
 if(AMQP-CPP_LINUX_TCP)
     #add_subdirectory(src/linux_tcp)
     aux_source_directory(src/linux_tcp src_LINUX_TCP)
+    find_path(OPENSSL_INCLUDE_DIR openssl/ssl.h)
+    include_directories(${OPENSSL_INCLUDE_DIR})
 endif()
 
 # potentially build the examples
