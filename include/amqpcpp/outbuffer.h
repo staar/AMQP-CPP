@@ -17,7 +17,7 @@
  */
 #include <memory>
 #include <cstring>
-#include "endian.h"
+#include "endian_amqp.h"
 
 /**
  *  Set up namespace
